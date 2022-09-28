@@ -1,4 +1,4 @@
-package demo;
+package demoBook;
 
 public class ComedyBook implements book {
 

@@ -1,4 +1,4 @@
-package demo;
+package demoBook;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -7,7 +7,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		//load the spring config file
 		// Step 2. Creating the container
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("\\demoBook\\applicationContext.xml");
 		
 		//Step 3. retrieve bean from spring container
 		book theBook = context.getBean("myBook", book.class); /// this mybook is bean id from xml file
